@@ -1,4 +1,4 @@
-#Smart School Gay Planner
+#Smart School Planner
 
 print("=====Smart School Day Planner=====")
 print("Answer 3 quick questions and I will plan your day!\n")
