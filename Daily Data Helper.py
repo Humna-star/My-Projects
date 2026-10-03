@@ -1,17 +1,12 @@
-class employee:
+class pair_element:
 
-    def __init__(self):
-        print("Employee created")
+    def twoSums(self, nums, target):
+        lookup = {}
 
-    def __del__(self):
-        print("Destructor called")
+        for i, num in enumerate(nums):
+            if target - num in lookup:
+                return (lookup[target - num], i)
+            lookup[num] = i
 
-def Create_obj():
-    print("Making object...")
-    obj = employee()
-    print("Function end")
-    return obj
-
-print("Calling Create_obj() function...")
-obj = Create_obj()
-print("Program end")
+value = int(input("Enter sum for which you want to make this search: "))
+print("index1=%d, index2=%d" % pair_element().twoSums((10, 20, 30, 40, 50, 60, 70), value))
